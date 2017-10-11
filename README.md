@@ -7,7 +7,7 @@
 
 The purpose of this project is to deploy a web application using Java EE specifications.  We decided to deploy the application on Wildflay server. Our application allows to take a book from a library ( book a book :) )  Every student can check if a book is avalaible on the moment and if not, he/she can reserve a book when it's gonna be returned. In order to be able to take a book, student has to be looged into the system.
 This is not the normal way to imlpement a library and renting book service, but we decided to make it this way in order to implement different security level. A book can be taken only for two weeks and we have perfectly responsible students who neved damaged book ou forget to return it. 
-Every student, book, and rental agreement has an unique ID. A database (MySQL) will contain all information about books, students, and rental agreements.  Our application will have an api REST in order to execute CRUD commands. All system will be deploy inside a docked contener. 
+Every student, book, and rental agreement has an unique ID. For each student it's possible to have his location story, and the same option is availible for a book. A database (MySQL) will contain all information about books, students, and rental agreements.  Our application will have an api REST in order to execute CRUD commands. All system will be deploy inside a docked contener. 
 
 
 TODO List  ( improvements ) :
