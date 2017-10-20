@@ -29,7 +29,10 @@ Then , you have to check that your server is up as well. You can do it via neatb
 
 When the process is done, you should be able to access the app server at the following URLs:
 
-JBoss Wildfly -> http://192.168.99.100:9090 (apps) and http://192.168.99.100:9990 (console -> admin/admin)
+JBoss Wildfly -> http://192.168.99.100:6060 (root/adminpw)
+
+##Generate books
+Go tho the http://localhost:9090/MVC-1.0-SNAPSHOT/generateBooks links and choose a number to books to be generated.
 
 #api REST
 
