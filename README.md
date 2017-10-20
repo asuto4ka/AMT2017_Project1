@@ -5,14 +5,35 @@
 
 # Project description and implementation choises
 
-The purpose of this project is to deploy a web application using Java EE specifications.  We decided to deploy the application on Wildflay server. Our application allows to take a book from a library ( book a book :) )  Every student can check if a book is avalaible on the moment and if not, he/she can reserve a book when it's gonna be returned. In order to be able to take a book, student has to be looged into the system.
-This is not the normal way to imlpement a library and renting book service, but we decided to make it this way in order to implement different security level. A book can be taken only for two weeks and we have perfectly responsible students who neved damaged book ou forget to return it. 
-Every student, book, and rental agreement has an unique ID. For each student it's possible to have his location story, and the same option is availible for a book. A database (MySQL) will contain all information about books, students, and rental agreements.  Our application will have an api REST in order to execute CRUD commands. All system will be deploy inside a docked contener. 
+The purpose of this project is to deploy a web application using Java EE specifications.  We decided to deploy the application on Wildflay server. Our application allows to have information ( author, release day, number of pages) about all books which are in the store.   A book has an unique ID (auto incremental).  Our application will have an api REST in order to execute CRUD commands.  We can update a book (modify an ahtour or number of pages for exemple), delete a book, create a book (id is added automatically). All system will be deploy inside a docked contener. 
 
 
 TODO List  ( improvements ) :
 If at the end of doing basic things, we have time to improve some aspects of our applications it will be :
-1) For the moment there is no automatic "log out service". Student stay loged in as long as he/she wants. There is only one way to be logged out: do it by ourself
-2) Gestion de concurence. It's not possible to make a reservation for a same book by different person at the same time. But for a moment, "first in - first served" concept is applyed. The first one who logged into the system is consider as a "most important"
-3) We decided that a book may ba taken only for two weeks, but we wanted let student decide for how long he/she needs it. 
+1) Make a sort of our database
+2) Verify the validity of data introduced by user
+
+
+#Quick start
+
+We assume that you have installed docker and docker-compose on your machine. Then, you have to go to directory containing *topology-amt* file and start docker-compose by typing:
+
+*cd topology-amt*
+*docker-compose up --build*
+*docker-compose up phpmadmin*.
+
+The first time you do that, it will take a some time because docker must fetch the source images from Docker Hub.
+Then, in order to be sure, we can use *docker-compose ps* to check that ours containers are up usint the right ports. 
+
+Then , you have to check that your server is up as well. You can do it via neatbeans --> services --> servers --> Wildfly ( in our case) right click --> start. 
+
+When the process is done, you should be able to access the app server at the following URLs:
+
+JBoss Wildfly -> http://192.168.99.100:9090 (apps) and http://192.168.99.100:9990 (console -> admin/admin)
+
+#api REST
+
+
+
+
 
