@@ -12,7 +12,9 @@ TODO List  ( improvements ) :
 If at the end of doing basic things, we have time to improve some aspects of our applications it will be :
 1) Make a sort of our database
 2) Verify the validity of data introduced by user
-
+3) Timestamp for during of a session
+4) No need to go one more time on the /generateBooks after login
+5) Number of current page:it's all in one line, if there is 100 pages, 100 buttons are on the same line.
 
 # Quick start
 
