@@ -14,13 +14,12 @@ If at the end of doing basic things, we have time to improve some aspects of our
 2) Verify the validity of data introduced by user
 
 
-#Quick start
+# Quick start
 
 We assume that you have installed docker and docker-compose on your machine. Then, you have to go to directory containing *topology-amt* file and start docker-compose by typing:
 
 *cd topology-amt*
 *docker-compose up --build*
-*docker-compose up phpmadmin*.
 
 The first time you do that, it will take a some time because docker must fetch the source images from Docker Hub.
 Then, in order to be sure, we can use *docker-compose ps* to check that ours containers are up usint the right ports. 
@@ -31,10 +30,17 @@ When the process is done, you should be able to access the app server at the fol
 
 JBoss Wildfly -> http://192.168.99.100:6060 (root/adminpw)
 
-##Generate books
-Go tho the http://localhost:9090/MVC-1.0-SNAPSHOT/generateBooks links and choose a number to books to be generated.
+## Database
+Database containes two tables: users and books:
 
-#api REST
+
+## Architecture
+
+
+## Generate books
+Go tho the http://localhost:9090/MVC-1.0-SNAPSHOT/generateBooks links and choose a number to books to be generated. You must be logged in in order to access this page. 
+
+## api REST
 
 
 
