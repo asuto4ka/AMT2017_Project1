@@ -11,10 +11,9 @@ The purpose of this project is to deploy a web application using Java EE specifi
 TODO List  ( improvements ) :
 If at the end of doing basic things, we have time to improve some aspects of our applications it will be :
 1) Make a sort of our database
-2) Verify the validity of data introduced by user
-3) Timestamp for during of a session
-4) No need to go one more time on the /generateBooks after login
-5) Number of current page:it's all in one line, if there is 100 pages, 100 buttons are on the same line.
+2) Timestamp for during of a session
+3) No need to go one more time on the /generateBooks after login
+
 
 # Quick start
 
@@ -50,4 +49,7 @@ Go tho the `http://localhost:9090/MVC-1.0-SNAPSHOT/` generateBooks links and cho
 
 ## Update & delete book
 Each book can be deleted or updated. When the link is visited , in URL adresse we can see `...updateBook?id=2` or `...deleteBook?id=2` once it's done, user is redirected to the first page. If user modifies  the URL and does not precise id , nothing will happen, user will redirected to the `\books`.
-There os no verification of data, a release year can be 0 or 99999. This point can be improuved as well.
+Number of pages must be bigger that 0 and less 3000
+Release year must be bigger than 0 and max the current year.
+Author and Title must be fild.
+If those fields are not valid, user is asked to repeat the opperation with good values.
