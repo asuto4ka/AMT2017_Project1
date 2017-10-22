@@ -35,8 +35,8 @@ JBoss Wildfly -> `http://192.168.99.100:6060` (root/adminpw)
 ## Database
 Database containes two tables: users and books:
 
-![Screenshot](images/books.png) </br>
-![Screenshot](images/users.png)) </br>
+![Screenshot](images/books.PNG) </br>
+![Screenshot](images/users.PNG) </br>
 
 
 
