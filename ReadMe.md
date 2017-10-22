@@ -42,7 +42,7 @@ Database containes two tables: users and books:
 
 ## Architecture
 
-![](images/structure.png) </br>
+![Screenshot](images/structure.PNG) </br>
 
 ## Generate books
 Go tho the `http://localhost:9090/MVC-1.0-SNAPSHOT/` generateBooks links and choose a number to books to be generated. You must be logged in in order to access this page. Once user is logged in (admin/admin), he has to go to the generateBooks page and put the number of books to be generated. If the number is too big, pages returns an error (can be emprouved). If the login and/or password are not correct, there is no an error message but while accessing `generateBooks` page user will asked again to insert login/password. This part may be improuved as well: if there's a mistake, an error message will pop up and user is staying in the same page.
